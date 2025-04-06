@@ -1,4 +1,40 @@
-body {
+/* Font for the site and auto browser margin */
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header navigation tabs styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+/* Site main content styling */
+main {
     font-family: sans-serif;
     margin: 0;
     background-color: #2b078f;
@@ -8,14 +44,6 @@ body {
     min-height: 100vh;
 }
 
-footer {
-    align-content: center;
-    -webkit-text-fill-color: #fff;
-    align-self:last baseline;
-    margin: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-}
 
 .container {  
     background-color: #fff;
@@ -80,7 +108,31 @@ button:hover {
     text-align: center;
 }
 
-/* Responsive Design */
+
+
+/* Footer section of the site styling */
+footer {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #2b078f;
+    display: flex;
+    justify-content: center;
+    align-self:last baseline;
+}
+
+p {
+align-self: center;
+color: #fff;
+}
+
+/* Other pages title styling */
+.title {
+    color: #fff;
+}
+
+
+
+/* Site Responsive styling for different devices */
 @media (max-width: 600px) {
     .container {
         padding: 20px;
